@@ -1,0 +1,23 @@
+# Gravity production streaming layer
+# Public clients can use JSON streams; internal services can use binary frames.
+
+default_encoding = "json"
+recent_limit = 100000
+topic_capacity = 65536
+heartbeat_ms = 15000
+slow_client_lag = 4096
+disconnect_slow_clients = true
+
+[topics]
+book = true
+trades = true
+fills = true
+oracle = true
+amm = true
+risk = true
+liquidations = true
+settlement = true
+perps = true
+index = true
+wal = true
+audit = true

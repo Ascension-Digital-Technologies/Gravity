@@ -1,0 +1,12 @@
+[package]
+name = "gravity-config"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+gravity-types = { path = "../types" }
+
+[lints]
+workspace = true

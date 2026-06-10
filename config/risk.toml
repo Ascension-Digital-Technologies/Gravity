@@ -1,0 +1,7 @@
+# Gravity risk runtime configuration.
+default_initial_margin_bps = 2000
+default_maintenance_margin_bps = 1000
+watch_health_bps = 15000
+margin_call_health_bps = 12000
+liquidation_health_bps = 10000
+event_limit = 100000

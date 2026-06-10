@@ -1,0 +1,23 @@
+# Gravity v3.0.0 safe JIT kernel configuration
+
+[jit]
+enabled = false
+mode = "warm"
+cache_dir = "runtime/cache/jit"
+validate_equivalence = true
+fallback_required = true
+promote_after_hits = 100000
+
+[kernels]
+fee_bps = true
+margin_requirement = true
+health_bps = true
+settlement_net_delta = true
+amm_quote = true
+index_nav = true
+
+[guardrails]
+never_jit_clob_ordering = true
+never_change_replay_order = true
+require_native_fallback = true
+require_exact_equivalence = true

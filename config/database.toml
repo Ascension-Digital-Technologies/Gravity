@@ -1,0 +1,23 @@
+# Gravity v3.4.0 database integration config
+mode = "memory" # memory | postgres | postgres-redis
+postgres_url = "postgres://gravity:gravity@localhost:5432/gravity"
+redis_url = "redis://127.0.0.1:6379"
+
+[postgres]
+max_connections = 16
+statement_timeout_ms = 5000
+validate_migrations = true
+reconnect = true
+batch_writes = true
+
+[redis]
+enabled = false
+cache_ttl_ms = 2000
+stream_max_len = 100000
+reconnect = true
+
+[backpressure]
+persistence_queue = 262144
+warn_bps = 7000
+critical_bps = 9000
+drop_oldest_when_full = true

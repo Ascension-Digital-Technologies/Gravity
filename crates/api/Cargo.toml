@@ -1,0 +1,27 @@
+[package]
+name = "gravity-api"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+gravity-book = { path = "../book" }
+gravity-amm = { path = "../amm" }
+gravity-risk = { path = "../risk" }
+gravity-liquidator = { path = "../liquidator" }
+gravity-perps = { path = "../perps" }
+gravity-index = { path = "../index" }
+axum.workspace = true
+gravity-database = { path = "../database" }
+gravity-types = { path = "../types" }
+gravity-oracle = { path = "../oracle" }
+gravity-wire = { path = "../wire" }
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+tower-http.workspace = true
+tracing.workspace = true
+
+[lints]
+workspace = true

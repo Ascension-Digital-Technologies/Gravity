@@ -1,0 +1,25 @@
+# Gravity v3.6.0 observability and ops-console configuration.
+# This layer is read-only by default and should not mutate trading state.
+
+enabled = true
+ops_version = "v3.6.0"
+startup_report = true
+health_report = true
+performance_report = true
+queue_report = true
+latency_report = true
+service_report = true
+
+[thresholds]
+worker_queue_warn_bps = 7000
+worker_queue_critical_bps = 9000
+persistence_queue_warn_bps = 7000
+persistence_queue_critical_bps = 9000
+latency_warn_us = 500
+latency_critical_us = 2500
+
+[reports]
+startup_path = "runtime/reports/startup-report.md"
+health_path = "runtime/reports/health-report.md"
+performance_path = "runtime/reports/performance-report.md"
+service_path = "runtime/reports/service-report.md"

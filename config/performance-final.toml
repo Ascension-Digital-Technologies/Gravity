@@ -1,0 +1,21 @@
+[performance]
+version = "3.7.0"
+mode = "final-tuning"
+object_pools = true
+intern_symbols = true
+intern_accounts = true
+zero_copy_snapshots = true
+binary_stream_fanout = true
+batch_database_writes = true
+parallel_risk_scans = true
+parallel_liquidation_scans = true
+
+[targets]
+tile_queue_ops_sec = 10000000
+binary_wire_ops_sec = 5000000
+parallel_dispatch_ops_sec = 3000000
+batch_order_intake_ops_sec = 2000000
+match_ops_sec = 1000000
+snapshot_reads_sec = 1000000
+risk_checks_sec = 1000000
+amm_quotes_sec = 1000000

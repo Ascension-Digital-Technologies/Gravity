@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS gravity_counters (
+  name TEXT PRIMARY KEY,
+  value BIGINT NOT NULL DEFAULT 0,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);

@@ -1,0 +1,11 @@
+# v0.3 normalized mock markets. Real exchange adapters use the async market adapter boundary.
+
+[[market]]
+symbol = "BTC-USDx"
+base = "BTC"
+quote = "USDx"
+
+[[market]]
+symbol = "ETH-USDx"
+base = "ETH"
+quote = "USDx"

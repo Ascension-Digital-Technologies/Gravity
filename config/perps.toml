@@ -1,0 +1,14 @@
+# Gravity perps runtime defaults
+[defaults]
+initial_margin_bps = 1000
+maintenance_margin_bps = 500
+max_leverage_bps = 100000
+funding_interval_ms = 3600000
+maker_fee_bps = 0
+taker_fee_bps = 5
+insurance_fund_bps = 1000
+
+[guards]
+max_funding_rate_bps = 100
+max_mark_index_deviation_bps = 250
+require_oracle_price = true

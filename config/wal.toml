@@ -1,0 +1,6 @@
+# Gravity v2.4 durable replay/WAL configuration.
+enabled = true
+root = "runtime/wal"
+recent_limit = 100000
+checkpoint_interval_ms = 30000
+fail_closed_on_append_error = true

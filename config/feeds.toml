@@ -1,0 +1,6 @@
+[feeds]
+enabled = true
+adapter_mode = "replay" # replay now; live sockets can be enabled after credentials/rate-limit policy is finalized
+reconnect_ms = 1000
+max_gap = 100
+venues = ["binance", "coinbase", "kraken"]

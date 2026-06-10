@@ -1,0 +1,9 @@
+[gravity]
+name = "gravity"
+bind = "127.0.0.1:8787"
+market_queue = 65536
+worker_tick_ms = 250
+settlement_endpoint = "127.0.0.1:9099"
+storage_mode = "memory" # memory | postgres | postgres-redis
+postgres_url = "postgres://gravity:gravity@127.0.0.1:5432/gravity"
+redis_url = "redis://127.0.0.1:6379"

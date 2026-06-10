@@ -1,0 +1,8 @@
+# Gravity binary wire configuration
+# JSON remains public API friendly; binary frames are for hot internal paths.
+
+enabled = true
+version = 1
+max_frame_bytes = 1048576
+order_frame_prealloc_bytes = 96
+reject_trailing_bytes = true

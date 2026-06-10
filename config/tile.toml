@@ -1,0 +1,37 @@
+# Gravity tile runtime configuration
+# Tiles are the hardware-aware execution units around Gravity's DeFi services.
+
+enabled = true
+auto_tune = true
+default_capacity = 65536
+default_batch = 1024
+spin_hot_tiles = false
+jit_mode = "warm" # off | warm | hot
+
+[[tiles]]
+name = "intake-0"
+kind = "Intake"
+core = 0
+capacity = 65536
+batch = 1024
+
+[[tiles]]
+name = "match-btc"
+kind = "Match"
+core = 1
+capacity = 131072
+batch = 2048
+
+[[tiles]]
+name = "settlement-0"
+kind = "Settlement"
+core = 2
+capacity = 65536
+batch = 1024
+
+[[tiles]]
+name = "stream-0"
+kind = "Stream"
+core = 3
+capacity = 65536
+batch = 1024

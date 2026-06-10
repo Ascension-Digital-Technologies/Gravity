@@ -1,0 +1,18 @@
+[package]
+name = "gravityd"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+gravity-api = { path = "../../crates/api" }
+gravity-config = { path = "../../crates/config" }
+gravity-core = { path = "../../crates/core" }
+gravity-worker = { path = "../../crates/worker" }
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+[lints]
+workspace = true

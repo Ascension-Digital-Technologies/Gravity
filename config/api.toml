@@ -1,0 +1,21 @@
+# Gravity v3.5.0 production API contract configuration
+api_version = "v1"
+contract_version = "v3.5.0"
+require_request_id = false
+accept_idempotency_key = true
+standard_response_envelope = true
+max_page_limit = 10000
+public_json_enabled = true
+binary_internal_enabled = true
+openapi_enabled = true
+admin_routes_enabled = true
+
+[headers]
+request_id = "x-request-id"
+idempotency_key = "idempotency-key"
+
+[limits]
+default_limit = 100
+max_limit = 10000
+binary_batch_max_orders = 100000
+json_batch_max_orders = 10000

@@ -1,0 +1,16 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Gravity API",
+    "version": "3.5.0",
+    "description": "Production API and SDK contract starter for Ascension Gravity. Runtime also exposes GET /api/openapi."
+  },
+  "servers": [{ "url": "http://127.0.0.1:8080" }],
+  "paths": {
+    "/api": { "get": { "summary": "API contract summary", "responses": { "200": { "description": "OK" } } } },
+    "/api/version": { "get": { "summary": "API version metadata", "responses": { "200": { "description": "OK" } } } },
+    "/api/errors": { "get": { "summary": "Error catalog", "responses": { "200": { "description": "OK" } } } },
+    "/api/routes": { "get": { "summary": "Route inventory", "responses": { "200": { "description": "OK" } } } },
+    "/api/openapi": { "get": { "summary": "Generated OpenAPI document", "responses": { "200": { "description": "OK" } } } }
+  }
+}

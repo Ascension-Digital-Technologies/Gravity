@@ -1,0 +1,27 @@
+[package]
+name = "gravitybench"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+gravity-index = { path = "../../crates/index" }
+gravity-book = { path = "../../crates/book" }
+gravity-amm = { path = "../../crates/amm" }
+gravity-risk = { path = "../../crates/risk" }
+gravity-liquidator = { path = "../../crates/liquidator" }
+gravity-perps = { path = "../../crates/perps" }
+gravity-types = { path = "../../crates/types" }
+gravity-settlement = { path = "../../crates/settlement" }
+gravity-wire = { path = "../../crates/wire" }
+gravity-tile = { path = "../../crates/tile" }
+gravity-hardware = { path = "../../crates/hardware" }
+gravity-perf = { path = "../../crates/perf" }
+gravity-oracle = { path = "../../crates/oracle" }
+gravity-config = { path = "../../crates/config" }
+serde.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,8 @@
+# Gravity Liquidation Runtime
+liquidation_health_bps = 10000
+partial_close_bps = 2500
+max_close_bps = 10000
+min_profit_bps = 25
+stale_oracle_ms = 5000
+candidate_limit = 100000
+event_limit = 100000

@@ -1,0 +1,31 @@
+# Gravity performance profile
+# v1.0 introduces lazy per-market actor workers with bounded command queues.
+
+market_worker_queue = 65536
+event_ring_limit = 100000
+max_drain_batch = 1024
+depth_cache_levels = [10, 25, 50]
+websocket_channel = 32768
+oracle_channel = 8192
+
+# Future OS-aware tuning knobs
+core_affinity = false
+numa_aware = false
+busy_poll = false
+
+[parallel]
+# Enables parallel execution across independent market workers for grouped batch intake.
+enabled = true
+max_parallel_markets = 0 # 0 = use runtime available parallelism
+microbatch_limit = 1024
+
+[pools]
+# First-stage pool sizing targets. v1.5 keeps the public type model intact and prepares pool limits for v1.6 slot allocators.
+order_pool_per_market = 262144
+fill_pool_per_market = 262144
+event_pool_per_market = 100000
+
+[streams]
+# Pre-serialized fanout groundwork for JSON/binary streams.
+preencode_events = true
+binary_streams = true

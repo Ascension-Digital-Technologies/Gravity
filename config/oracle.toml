@@ -1,0 +1,13 @@
+# Gravity production oracle configuration
+method = "median-vwap"
+min_sources = 3
+max_stale_ms = 5000
+max_deviation_bps = 250
+report_ttl_ms = 10000
+signing_enabled = true
+signing_key_id = "gravity-local-dev"
+signing_secret = "replace-me-before-production"
+min_confidence_bps = 6000
+source_weight_bps = 1500
+stale_penalty_bps = 2000
+outlier_penalty_bps = 3000

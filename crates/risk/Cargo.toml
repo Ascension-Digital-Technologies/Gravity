@@ -1,0 +1,13 @@
+[package]
+name = "gravity-risk"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+gravity-types = { path = "../types" }
+serde.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true

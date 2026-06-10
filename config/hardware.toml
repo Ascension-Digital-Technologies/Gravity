@@ -1,0 +1,15 @@
+# Gravity hardware-aware runtime configuration
+profile = "balanced"
+auto_detect = true
+allow_cpu_pinning = true
+isolate_hot_markets = true
+isolate_storage = true
+isolate_streams = true
+
+[profiles.low_latency]
+match_batch = 512
+queue_capacity = 65536
+
+[profiles.high_throughput]
+match_batch = 4096
+queue_capacity = 262144

@@ -1,0 +1,14 @@
+# Gravity index fund runtime configuration
+default_quote_asset = "USDx"
+default_management_fee_bps = 25
+default_rebalance_threshold_bps = 500
+default_min_mint_notional = "100"
+max_assets_per_product = 128
+event_limit = 100000
+
+[[products]]
+id = "ASC10"
+name = "Ascension Top 10"
+quote_asset = "USDx"
+management_fee_bps = 25
+rebalance_threshold_bps = 500

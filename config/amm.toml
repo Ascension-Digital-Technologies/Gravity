@@ -1,0 +1,25 @@
+# Gravity AMM production hardening config
+
+[defaults]
+fee_bps = 30
+min_liquidity = "1"
+max_price_impact_bps = 5000
+oracle_max_deviation_bps = 250
+
+[constant_product]
+enabled = true
+
+[stable]
+enabled = true
+default_amplification_bps = 100000
+max_single_swap_reserve_bps = 3000
+
+[weighted]
+enabled = true
+default_base_weight_bps = 5000
+default_quote_weight_bps = 5000
+
+[guards]
+require_min_out_for_public_swaps = true
+enable_oracle_deviation_guard = true
+enable_pool_event_audit = true

@@ -1,0 +1,31 @@
+[package]
+name = "gravity-database"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+gravity-book = { path = "../book" }
+gravity-amm = { path = "../amm" }
+gravity-risk = { path = "../risk" }
+gravity-liquidator = { path = "../liquidator" }
+gravity-perps = { path = "../perps" }
+gravity-index = { path = "../index" }
+gravity-stream = { path = "../stream" }
+gravity-hardware = { path = "../hardware" }
+gravity-wal = { path = "../wal" }
+gravity-tile = { path = "../tile" }
+dashmap.workspace = true
+gravity-types = { path = "../types" }
+gravity-oracle = { path = "../oracle" }
+gravity-settlement = { path = "../settlement" }
+redis.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sqlx.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,21 @@
+# Gravity v3.3.0 security and correctness guardrails
+
+[correctness]
+enable_invariant_tests = true
+enable_replay_tests = true
+enable_overflow_tests = true
+enable_rounding_tests = true
+enable_jit_equivalence_tests = true
+
+[limits]
+max_fuzz_smoke_cases = 10000
+max_replay_records = 1000000
+fail_closed_on_corruption = true
+
+[invariants]
+require_asset_conservation = true
+require_idempotent_settlement = true
+require_deterministic_price_time_priority = true
+require_exact_jit_equivalence = true
+require_non_stale_oracle_inputs = true
+require_non_negative_pool_reserves = true

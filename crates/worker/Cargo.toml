@@ -1,0 +1,18 @@
+[package]
+name = "gravity-worker"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+gravity-adapters = { path = "../adapters" }
+gravity-core = { path = "../core" }
+gravity-database = { path = "../database" }
+gravity-market = { path = "../market" }
+gravity-types = { path = "../types" }
+tokio.workspace = true
+tracing.workspace = true
+
+[lints]
+workspace = true

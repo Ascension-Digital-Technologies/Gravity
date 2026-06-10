@@ -1,0 +1,37 @@
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock.bak
+
+# Runtime output
+/runtime/cache/*
+/runtime/data/*
+/runtime/logs/*
+/runtime/reports/*
+/runtime/wal/*
+!/runtime/cache/.gitkeep
+!/runtime/data/.gitkeep
+!/runtime/logs/.gitkeep
+!/runtime/reports/.gitkeep
+!/runtime/wal/.gitkeep
+
+# Local env/secrets
+.env
+.env.*
+*.local.toml
+config/local.toml
+config/secrets.toml
+
+# Editors/OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Archives/build artifacts
+*.zip
+*.tar.gz
+*.7z
+/releases/*.zip

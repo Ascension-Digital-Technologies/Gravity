@@ -1,0 +1,41 @@
+# Gravity tile runtime completion profile
+
+profile = "high-throughput"
+restart_unhealthy = true
+health_interval_ms = 1000
+max_queue_pressure_bps = 8500
+slow_latency_ns = 250000
+
+[[tiles]]
+name = "ingress"
+kind = "ingress"
+core = 0
+capacity = 65536
+batch = 1024
+
+[[tiles]]
+name = "match"
+kind = "match"
+core = 1
+capacity = 131072
+batch = 2048
+
+[[tiles]]
+name = "oracle"
+kind = "oracle"
+core = 2
+capacity = 65536
+batch = 1024
+
+[[tiles]]
+name = "settlement"
+kind = "settlement"
+core = 3
+capacity = 65536
+batch = 1024
+
+[[tiles]]
+name = "stream"
+kind = "stream"
+capacity = 65536
+batch = 1024

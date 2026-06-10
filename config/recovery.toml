@@ -1,0 +1,19 @@
+# Gravity WAL recovery runtime configuration.
+enabled = true
+mode = "dry-run-first"
+root = "runtime/wal"
+checkpoint_file = "checkpoints.jsonl"
+fail_on_corruption = true
+allow_missing_optional_streams = true
+reconcile_settlement = true
+rebuild_orderbooks = true
+rebuild_oracle = true
+rebuild_amm = true
+rebuild_risk = true
+rebuild_liquidations = true
+rebuild_perps = true
+rebuild_index = true
+
+[limits]
+max_recent_checkpoints = 10000
+max_replay_records_per_stream = 10000000
