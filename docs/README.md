@@ -34,4 +34,3 @@ Runtime docs:
 - [Streaming runtime](STREAM-RUNTIME.md)
 - [Wire protocol](WIRE.md)
 
-Release manifests are archived in [`releases/`](releases/).

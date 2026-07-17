@@ -189,7 +189,6 @@ Start here:
 - [`docs/PERFORMANCE.md`](docs/PERFORMANCE.md)
 - [`docs/SECURITY-CORRECTNESS.md`](docs/SECURITY-CORRECTNESS.md)
 
-Release manifests are archived under [`docs/releases/`](docs/releases/).
 
 ## Safety model
 
